@@ -1,0 +1,25 @@
+{
+  "short_name": "StudentOS",
+  "name": "StudentOS Application",
+  "icons": [
+    {
+      "src": "resources/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "resources/icon.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "resources/icon-hires.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#33cc33",
+  "background_color": "#ffffff"
+}

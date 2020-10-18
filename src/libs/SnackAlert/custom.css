@@ -1,0 +1,16 @@
+.snackalert .snackbar {
+  z-index: 1;
+  background: var(--box-background);
+  color: var(--text);
+  -webkit-box-shadow: 0px 4px 12px var(--shadow);
+          box-shadow: 0px 4px 12px var(--shadow);
+}
+
+.snackalert .snackbar .action {
+  color: var(--accent);
+}
+
+.snackalert .snackbar .action ::before {
+  background: var(--box-hover);
+}
+/*# sourceMappingURL=custom.css.map */

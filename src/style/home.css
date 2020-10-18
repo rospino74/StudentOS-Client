@@ -1,0 +1,84 @@
+.welcome {
+  margin-left: 2vw;
+}
+
+.welcome .name {
+  color: var(--accent);
+  margin: 0;
+  padding: 0;
+  font-size: 4vw;
+}
+
+.welcome .select {
+  color: var(--subtitle);
+  margin: 1vh 0;
+  font-weight: normal;
+  font-size: 2vw;
+}
+
+.classList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.classList .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 20vw;
+  width: 20vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: var(--box-background);
+  margin: 1vw;
+  padding: 2%;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 1px 5px var(--shadow);
+          box-shadow: 1px 1px 5px var(--shadow);
+  text-align: center;
+  color: var(--text);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.classList .item .icon {
+  border-radius: 10px;
+  height: 50%;
+  height: 50%;
+}
+
+.classList .item .name {
+  font-size: 24px;
+}
+
+.classList .item:visited {
+  color: var(--text);
+}
+
+.classList .item:hover {
+  -webkit-box-shadow: 3px 3px 5px var(--shadow);
+          box-shadow: 3px 3px 5px var(--shadow);
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  background-color: var(--box-background-hover);
+}
+/*# sourceMappingURL=home.css.map */

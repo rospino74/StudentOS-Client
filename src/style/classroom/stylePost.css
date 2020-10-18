@@ -1,0 +1,160 @@
+/*	Style for post	*/
+/*content*/
+.post {
+	margin: 10px 2vw;
+	border-radius: 20px;
+	color: var(--text);
+    border: 1px var(--subtitle) solid;	
+	position: relative;
+	font-family: 'Prompt';
+	cursor: default;
+}
+.post > .content {
+	margin: 15px;
+	position: relative;
+	min-height: 70px;
+}
+/*Title*/
+.title {
+	margin:0;
+	margin-bottom: 5px;
+	color: var(--accent);
+    font-family: 'Architects Daughter';
+}
+/*Text*/
+.text {
+	margin:0;
+	margin-right: 150px;
+    font-size: 15px;
+}
+.text a {
+	color: var(--accent);
+	text-decoration: underline var(--accent) dotted;
+}
+.text img {
+	max-height: 120px;
+	max-width: 100%;
+}
+/*Info*/
+.info {
+	font-size: 12px;
+	text-align: right;
+	position:absolute;
+	bottom: 5px;
+	right: 10px;
+}
+.info a {
+	color: var(--accent);
+	text-decoration: underline var(--accent) dotted;	
+}
+.separator {
+	height: .8px;
+	width: 100%;
+	background-color: var(--subtitle);
+}
+
+/*Comment*/
+.comments {
+	margin-top: 5px;
+	padding-top: 5px;
+	max-height: 250px;
+	scroll-behavior: smooth;
+	overflow-y: auto;
+	position: relative;
+}
+.comments > .empty {
+	margin: 5px;
+	font-size: 10px;
+	color: var(--subtitle);
+	text-align: center;
+}
+.comments > a.add-comment, .comments > .empty a {
+	border: none !important;
+	padding: 0;
+	font-size: 10px !important;
+}
+.comments > a.add-comment {
+	margin-left: 15px;
+}
+.comments > a.add-comment:visited, .comments > .empty a:visited {
+	color: var(--accent) !important;
+}
+.comment {
+	margin: 15px;
+}
+.comments:nth-child(2) {
+	margin-top: 0;
+}
+.comment .author {
+	margin: 0;
+	display: inline;
+	font-size: 15px;
+	color: var(--accent);
+}
+.comment .date {
+	display: inline;
+	margin: 0;
+	font-size: 10px;
+	color: var(--subtitle);
+}
+.comment .content {
+	margin: 0;
+}
+/* Dropdown menu */
+.menu {
+	position: relative;
+	float: right;
+	display: block;
+	z-index:1;
+}
+.menu .menu-btn {
+	position: absolute;
+	right: 30px;
+	top: 15px;
+	border: none;
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	cursor: pointer;
+	color: var(--text);
+}
+.menu .menu-content {
+	position: absolute;
+	right: 0;
+	background-color: var(--box-background);
+	min-width: 160px;
+	box-shadow: 0px 4px 8px 0px var(--shadow);
+	z-index: 1;
+	font-family: 'Prompt';
+}
+.comment > .menu {
+	float: none;
+	display: inline-block;
+	color: var(--text);
+}
+.comment > .menu .menu-btn {
+	color: var(--text);
+	display: inline;
+	position: unset;
+}
+.comment > .menu .menu-content {
+	left: -5px;
+	top: -10px;
+	right: unset;
+}
+.menu .menu-content * {
+  color: var(--text);
+  background-color: var(--box-background);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border: none;
+  width: 100%;
+}
+.menu .menu-content :hover {
+	background-color: var(--box-background-hover);
+	color: var(--text-hover);
+}
+.menu .menu-content :visited {
+	color: var(--text);
+}

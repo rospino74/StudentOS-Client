@@ -1,0 +1,83 @@
+.commentWriter {
+  margin-left: 15px;
+  margin-bottom: 10px;
+  width: 30%;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.commentWriter .writeBtn {
+  color: var(--accent);
+  background-color: transparent;
+  border: none;
+  padding-left: 0;
+}
+
+.commentWriter .inputComment {
+  border: 2px solid var(--accent);
+  border-radius: 5px;
+  padding: 5px;
+  width: 40%;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  background-color: transparent;
+  color: var(--text);
+}
+
+.commentWriter .inputComment:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem var(--light-accent);
+          box-shadow: 0 0 0 0.2rem var(--light-accent);
+}
+
+.commentWriter:hover, .commentWriter:focus-within {
+  width: 80%;
+}
+
+.commentWriter.invalid {
+  -webkit-animation: shake .2s 3 ease-out;
+          animation: shake .2s 3 ease-out;
+}
+
+.commentWriter.invalid .writeBtn {
+  color: var(--error);
+}
+
+.commentWriter.invalid .inputComment {
+  border: 2px solid var(--error);
+}
+
+.commentWriter.invalid .inputComment:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem var(--light-error);
+          box-shadow: 0 0 0 0.2rem var(--light-error);
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  50% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  50% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+/*# sourceMappingURL=writeComment.css.map */

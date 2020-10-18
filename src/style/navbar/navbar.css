@@ -1,0 +1,120 @@
+/* NAVBAR HTML:
+
+<div class="navbar">
+		<a href="../" class="navbar-item navbar-icon" data-action="goto:home" rel="home"><img src="../rsc/icon-hires.png" alt="Student"/></a>
+		<a href="#last" class="navbar-item">Ultimo Post</a>
+		<a href="../check.php?action=logout" style="float:right;" class="navbar-item" data-action="action:quit">Esci</a>
+	</div>
+*/
+.navbar {
+  height: 5vh;
+  width: 100vw;
+  padding: 10px 5px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--background);
+  -webkit-box-shadow: 0px 5px 10px var(--shadow);
+          box-shadow: 0px 5px 10px var(--shadow);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--text);
+}
+
+.navbar .navbar-item {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--text);
+  text-align: center;
+  float: left;
+  padding: 0 2%;
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.navbar .navbar-item :hover {
+  color: var(--text-hover);
+}
+
+.navbar .navbar-item.navbar-img {
+  padding: 5px;
+  width: 3%;
+  height: 120%;
+}
+
+.navbar .navbar-item.navbar-img svg {
+  height: 100%;
+  width: 100%;
+  fill: var(--accent);
+}
+
+/*.navbar .navbar-item.profile-icon {
+  height: 100%;
+  width: auto;
+}*/
+
+.navbar .navbar-item.profile-icon img {
+  clip-path: circle(30%);
+  transform: scale(0.30);
+}
+
+.navbar button.navbar-item {
+  background: transparent;
+  border: none;
+}
+
+.subnav {
+  position: fixed;
+  right: 10px;
+  top: 10vh;
+  z-index: 10;
+  padding: 15px;
+  width: 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 2px 2px 5px var(--shadow);
+          box-shadow: 2px 2px 5px var(--shadow);
+  background: var(--background);
+}
+
+.subnav .subnav-item {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  margin-top: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.subnav .subnav-item.subnav-icon {
+  padding: 0;
+  text-align: left;
+}
+
+.subnav button.subnav-item.subnav-icon {
+  background: transparent;
+  border: none;
+}
+/*# sourceMappingURL=navbar.css.map */

@@ -1,0 +1,88 @@
+html {
+	--accent: #33cc33;
+	--light-accent: #99ff99;
+	--error: #cc3333;
+	--light-error: #ff9999;
+	--text: #333333;
+	--subtitle: #cfcfcf;
+	--text-hover: #888888;
+	--background: #ffffff;
+	--background-hover: #c9c9c9;
+	--box-background: #fafafa;
+	--box-background-hover: #e3e3e3;
+	--image-background-hover: #00000055;
+	--image-text-hover: #ffffff;
+	--shadow: #5555;
+}
+html.dark {
+	--accent: #33cc33;
+	--light-accent: #99ff99;
+	--text: #eeeeee;
+	--subtitle: #aaaaaa;
+	--text-hover: #aaaaaa;
+	--background: #333333;
+	--background-hover: #2b2b2b;
+	--box-background: #444444;
+	--box-background-hover: #5a5a5a;
+	--shadow: #17171754;
+}
+html.blue {
+	--accent: #2ec4ff;
+	--light-accent: #25b5f6;
+	--text: #ffffff;
+	--subtitle: #86a6bd;
+	--text-hover: #888888;
+	--background: #1e282c;
+	--box-background: #1f3036;
+	--box-background-hover: #29434e;
+	--shadow: #17171754;
+}
+html.red {
+	--accent: #ff2e2e;
+	--light-accent: #f62525;
+	--text: #ffffff;
+	--subtitle: #bd8686;
+	--text-hover: #888888;
+	--background: #333333;
+	--box-background: #444444;
+	--box-background-hover: #5a5a5a;
+	--image-background-hover: #ff6a6a55;
+	--image-text-hover: #000000;
+	--shadow: #17171754;
+}
+html.high-contrast-dark {
+	--accent: #ffffff;
+	--light-accent: #ffffff;
+	--text: #ffffff;
+	--subtitle: #ffffff;
+	--text-hover: #e4e4e4;
+	--background: #000000;
+	--box-background: #1f1f1f;
+	--box-background-hover: #2e2e2e;
+	--image-background-hover: #000000;
+	--image-text-hover: #ffffff;
+	--shadow: transparent;
+}
+html.high-contrast-white {
+	--accent: #000000;
+	--light-accent: #000000;
+	--text: #000000;
+	--subtitle: #000000;
+	--text-hover: #131313;
+	--background: #ffffff;
+	--box-background: #fdfdfd;
+	--box-background-hover: #f3f3f3;
+	--image-background-hover: #ffffff;
+	--image-text-hover: #000000;
+	--shadow: transparent;
+}
+html.high-contrast-white .navbar .navbar-item.navbar-img svg {
+	fill: #33cc33;
+}
+html.high-contrast-dark .navbar .navbar-item.navbar-img svg {
+	fill: #cc32cc;
+	filter: invert(1);
+}
+html.high-contrast-dark .classroom .writer .writeBtn {
+	color: #000;
+}
